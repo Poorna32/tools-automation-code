@@ -1,6 +1,6 @@
 format_version: 10
 pipelines:
-   prometheus:
+  prometheus:
     group: Tools
     label_template: ${COUNT}
     lock_behavior: none
@@ -19,6 +19,6 @@ pipelines:
           approval:
             type: manual
           jobs:
-            -ansible:
+            ansible:
               tasks:
-              - exec: { command: ansible-playbook, arguments: [ "-i","172.31.27.163" ,"tools.yml","tool_name=prometheus" ,"-e", "ansible_user=ec2-user", "-e","ansible_password=DevOps321" ] ,run_if: passed}
+                - exec: { command: ansible-playbbok, arguments: [ "-i", "172.31.27.163", "tools.yml", "-e", "tool_name=prometheus", "-e", "ansible_user=ec2-user", "-e", "ansible_password=DevOps321" ],run_if: passed}
