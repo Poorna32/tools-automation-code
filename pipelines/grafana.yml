@@ -1,4 +1,4 @@
-pformat_version: 10
+format_version: 10
 pipelines:
   grafana:
     group: Tools
