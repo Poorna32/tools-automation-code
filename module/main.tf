@@ -11,9 +11,10 @@ resource "aws_instance" "instance" {
       spot_instance_type             = "persistent"
     }
   }
- tags = {
-   Name = var.tool_name
- }
+
+  tags = {
+    Name = var.tool_name
+  }
 
   lifecycle {
     ignore_changes = [
@@ -21,7 +22,6 @@ resource "aws_instance" "instance" {
     ]
   }
 }
-
 
 resource "aws_route53_record" "record" {
   name    = var.tool_name
