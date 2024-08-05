@@ -14,5 +14,5 @@
     remote_src: yes
   become_user: ec2-user
 
-## Install runner we will take manual
-#- name: Install Runner
+- name: Install Dependencies
+  ansible.builtin.shell: /home/ec2-user/github-runner/bin/installdependencies.sh
