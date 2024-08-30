@@ -130,14 +130,14 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "avg by (code) (rate(caddy_http_request_duration_seconds_count[1m]))",
+          "expr": "avg by (code) (rate(caddy_http_request_duration_seconds_count[1m])) * 100",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
           "refId": "A"
         }
       ],
-      "title": "Response Time",
+      "title": "Response Time in Milliseconds",
       "type": "timeseries"
     },
     {
