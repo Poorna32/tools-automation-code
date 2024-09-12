@@ -11,6 +11,8 @@ pipelines:
         shallow_clone: false
         auto_update: true
         branch: main
+    secure_variables:
+      vault_token: AES:IsBYAm5FqkgJcOHm4xGpZA==:5hWQOBgpXckItg7rgH3cag2p/EOEghfLRxh3XPc7m5E=
     stages:
       - Ansible:
           fetch_materials: true
