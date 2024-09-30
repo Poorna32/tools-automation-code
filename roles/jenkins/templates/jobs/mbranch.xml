@@ -28,7 +28,7 @@
             <jenkins.branch.BranchSource>
                 <source class="jenkins.plugins.git.GitSCMSource" plugin="git@5.4.1">
                     <id>8c14e8de-03fe-46d2-9157-096dca1d370d</id>
-                    <remote>https://github.com/Poornachandra3/expense-{{item}}.git</remote>
+                    <remote>https://github.com/Poornachandra3/roboshop-{{item}}.git</remote>
                     <credentialsId>SSH</credentialsId>
                     <traits>
                         <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
