@@ -12,7 +12,7 @@ variable "tools" {
 
     vault= {
       instance_type        = "t3.small"
-      policy_resource_list = [ ]
+      policy_resource_list = [ "*" ]
     }
 
 #    elk= {
@@ -37,7 +37,7 @@ variable "tools" {
 
     jenkins= {
       instance_type        = "t3.small"
-      policy_resource_list = [ ]
+      policy_resource_list = [ "*" ]
     }
   }
 }
